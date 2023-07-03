@@ -1,5 +1,8 @@
 :root {
-  
+  --color-header: #fff;
+  --color-light-blue: #F0F8FF;
+  --color-blue: #0077F4;
+  --color-medium-blue: #1C3C50;
 }
 
 * {
@@ -12,5 +15,12 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color:rgb(141, 196, 221);
+}
+
+h1 {
+  font-size: 90px;
+}
+
+h2 {
+  font-size: 48px;
 }

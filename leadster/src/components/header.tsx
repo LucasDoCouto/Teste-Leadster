@@ -2,7 +2,6 @@
 
 import { styled } from "styled-components"
 import Image from 'next/image'
-import { Autour_One } from "next/font/google"
 
 interface HeaderProps {
 
