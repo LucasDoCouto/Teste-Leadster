@@ -2,6 +2,7 @@ import './globals.css'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 import { Header } from '@/components/header'
 import { HeroBanner } from '@/components/hero-banner'
+import { FilterCatProvider } from '@/context/filter-context'
 
 const jakarta = Plus_Jakarta_Sans ({ subsets: ['latin'] })
 
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={jakarta.className}>
-        <Header/>
-        <HeroBanner/>
-        {children}
+        <FilterCatProvider>
+          <Header/>
+          <HeroBanner/>
+          {children}
+        </FilterCatProvider>
       </body>
     </html>
   )
